@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <title>Página Inicial</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.8/inputmask.min.js"></script>
+    </head>
+
+    <body>
+        <header class="header">
+            <a href="index.html" class="logo" aria-label="Página inicial da Resgate Amicão">
+                <img src="img/logo4.png" alt="Logo da ONG Resgate Amicão, com a pata de de um cachorro, nas cores verde e branco, e o nome da organização abaixo, na cor verde">
+                <span class="nome-ong">Resgate Amicão</span>
+            </a>   
+
+            <nav>
+                <ul class="navMenu">
+                    <li><a href="index.html">Página Inicial</a></li>
+                    <li class="has-submenu"><a href="#nossaong">Nossa ONG</a>
+                        <ul class="submenu">
+                            <li><a href="#nossaong">Quem Somos</a></li>
+                            <li><a href="#missao">Missão</a></li>
+                            <li><a href="#visao">Visão</a></li>
+                            <li><a href="#valores">Valores</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu"><a href="projetos.html">Projetos Sociais</a>
+                        <ul class="submenu">
+                            <li><a href="projetos.html#ajudar">Quero Ajudar</a></li>
+                            <li><a href="projetos.html#ajudar">Como Doar</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="adocao.html">Quero Adotar</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="#contato">Contato</a></li>                  
+                </ul>
+            </nav>
+
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Alternar menu de navegação">
+                <i class="fas fa-bars"></i>
+            </button>
+        </header>
+
+        <main>
+            <section class="hero">
+                <h1>Ajude a Transformar Vidas!</h1>
+                <div class="hero-text">
+                    <p><a href="adocao.html" class="btn btn-adocao">Adote Seu Amicão🐶</a></p>
+                </div>
+
+                <figure class="hero-image">
+                    <img src="img/puppies.jpg" alt="filhotes de cachorros de raças diferentes">
+                    <!--<figcaption>Imagem: <a href="https://br.freepik.com/fotos-gratis/colecao-de-retratos-de-filhotes-adoraveis_18463095.htm#fromView=image_search_similar&page=1&position=39&uuid=ed7e8a6e-b043-4a16-8d75-26a4430f5395&query=puppies+" target="_blank" rel="noopener noreferrer">Freepik</a></figcaption>-->
+                </figure>
+            </section>
+
+            <section id="nossaong">
+                <h2>Nossa ONG</h2>
+                <article class="quem-somos">
+                    <h3>Quem Somos</h3>
+                    <p>Somos a <strong>Resgate Amicão</strong>, uma ONG apaixonada por transformar vidas!</p> 
+                    <p>Lutamos todos os dias para dar uma nova chance aos nossos amigos peludos: com resgate, cuidado, amor e, claro, muitas lambidas de gratidão!</p>
+                    <p>Desde a fundação, em 2022, já resgatamos mais de <strong>800 cães</strong>, promovemos mais de <strong>600 adoções responsáveis</strong> e realizamos diversas campanhas de conscientização nas escolas e comunidades.</p>
+                    <p>Nosso time é formado por voluntários, veterinários, cuidadores, educadores e apaixonados por animais.</p>
+                    <p>Entre nossas conquistas, destacamos a construção do nosso primeiro abrigo, a realização de feiras mensais de adoção e parcerias com clínicas veterinárias e pet shops.</p>
+                    <p>Aqui, cada focinho tem nome, história e esperança.</p> 
+                    <h3>Oferecemos</h3>
+                    <ul>
+                        <li>🐾 Abrigo com capacidade para até 60 cães</li>
+                        <li>🐾 Espaço de atendimento veterinário</li>
+                        <li>🐾 Equipe de resgate móvel</li>
+                        <li>🐾 Conscientização nas escolas</li>
+                    </ul>
+                </article>
+
+                <article class="missao-visao-valores">
+                    <div class="card" id="missao">
+                        <img src="img/mission-accomplished.png" alt="Ícone de Missão" width="80" height="80">
+                        <h3>Missão</h3>
+                        <p>Dar voz e cuidado aos cães que mais precisam, oferecendo acolhimento, tratamento e a chance de encontrar um lar cheio de amor e responsabilidade.</p>
+                    </div>
+
+                    <div class="card" id="visao">
+                        <img src="img/vision.png" alt="Ícone de Visão" width="80" height="80">
+                        <h3>Visão</h3>
+                        <p>Sonhamos com um mundo onde nenhum cão seja invisível e todos tenham a chance de viver com dignidade, carinho e segurança.</p>
+                    </div>
+
+                    <div class="card" id="valores">
+                        <img src="img/core-value.png" alt="Ícone de Valores" width="80" height="80">
+                        <h3>Valores</h3>
+                        <ul>
+                            <li><strong>Amor pelos Animais</strong> – Eles são Família!</li>
+                            <li><strong>Transparência e Respeito</strong> – Com Todos.</li>
+                            <li><strong>Adoção Responsável</strong> – É pra Vida toda!</li>
+                            <li><strong>Conscientização</strong> – Educar é Transformar.</li>
+                            <li><strong>Força do Voluntariado</strong> – Juntos, somos mais Fortes!</li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+
+            <section>
+                <h2 id="contato">Como nos Encontrar</h2>
+
+                <figure class="mapa">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.2534401843614!2d-47.9029977241124!3d-15.790584922862765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3a8b86c5b855%3A0x542904fb03c1bc97!2sParque%20da%20Cidade%20-%20Srps%20-%20Plano%20Piloto%2C%20Bras%C3%ADlia%20-%20DF%2C%2070655-775!5e0!3m2!1spt-BR!2sbr!4v1760804323403!5m2!1spt-BR!2sbr" 
+                        width="1950" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localização da ONG Resgate Amicão no Google Maps">
+                    </iframe>
+                    <!--<figcaption>Localização da ONG Resgate Amicão</figcaption>-->
+                </figure>
+
+                <div class="contato-grid">
+                    <section class="localizacao">
+                        <h2>Localização</h2>
+                        <address>Srps - Plano Piloto, Brasília - DF, 70655-775</address>
+                    </section>
+
+                    <section class="horario">
+                        <h2>Horário</h2>
+                        <p>Segunda à Sábado</p>
+                        <p>de <time datetime="08:00">8:00h</time> às <time datetime="19:00">19:00h</time></p>
+                    </section>
+
+                    <section class="faleconosco">
+                        <h2>Fale Conosco</h2>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:contato@resgateamicao.org">contato@resgateamicao.org</a></p>
+                        <p><i class="fas fa-phone"></i> <a href="tel:+5561912345678">(61) 91234-5678</a></p>
+                    </section>
+                </div>        
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <nav class="social-icons">
+                    <a href="https://facebook.com" target="_blank" title="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" title="Twitter">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a href="https://youtube.com" target="_blank" title="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://tiktok.com" target="_blank" title="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://wa.me/5561912345678" target="_blank" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="mailto:contato@resgateamicao.org" aria-label="Enviar e-mail">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </nav>
+
+                <p class="footer-copy"><strong>&copy; 2025 ONG Resgate Amicão by Danyelle Brown</strong></p>
+            </div>
+            
+            <a href="#" class="footer-logo-link">
+                <img src="img/logo4.png" alt="Logo da ONG Resgate Amicão" class="footer-logo">
+            </a>
+        </footer>
+
+        <script defer src="js/script.js"></script>
+    </body>
+</html>

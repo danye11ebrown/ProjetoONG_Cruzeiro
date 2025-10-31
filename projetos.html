@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <title>Projetos Sociais</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.8/inputmask.min.js"></script>
+    </head>
+
+    <body>
+        <header class="header">
+            <a href="index.html" class="logo" aria-label="Página inicial da Resgate Amicão">
+                <img src="img/logo4.png" alt="Logo da ONG Resgate Amicão, com a pata de de um cachorro, nas cores verde e branco, e o nome da organização abaixo, na cor verde">
+                <span class="nome-ong">Resgate Amicão</span>
+            </a>   
+            
+            <nav>
+                <ul class="navMenu">
+                    <li><a href="index.html">Página Inicial</a></li>
+                    <li class="has-submenu"><a href="index.html#nossaong">Nossa ONG</a>
+                        <ul class="submenu">
+                            <li><a href="index.html#nossaong">Quem Somos</a></li>
+                            <li><a href="index.html#missao">Missão</a></li>
+                            <li><a href="index.html#visao">Visão</a></li>
+                            <li><a href="index.html#valores">Valores</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu"><a href="projetos.html">Projetos Sociais</a>
+                        <ul class="submenu">
+                            <li><a href="#ajudar">Quero Ajudar</a></li>
+                            <li><a href="#ajudar">Como Doar</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="adocao.html">Quero Adotar</a></li>
+                    <li><a href="cadastro.html" class="btn-primary">Cadastro</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>                  
+                </ul>
+            </nav>
+
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Alternar menu de navegação">
+                <i class="fas fa-bars"></i>
+            </button>
+        </header>
+
+        <main>
+            <section class="projetos">
+                <h1>Nossos Projetos</h1>
+                <article>
+                    <h2 class="texto">Amicão na Escola</h2>
+                    <figure>
+                        <img src="img/cachorro4.jpg" alt="um cachorro da raça border collie rodeado por quatro crianças sentadas e uma em pé">
+                            <!--<figcaption>Imagem: Prefeitura Apucarama / Internet</figcaption>-->
+                    </figure>
+                    <p class="texto">Levamos palestras educativas sobre cuidados e respeito aos animais em escolas públicas. Desde 2023, já alcançamos mais de 2.000 alunos.</p>
+                </article>
+                      
+                <article>
+                    <h2 class="texto">Vet Solidário</h2>
+                    <figure>                                                                
+                        <img src="img/cachorro3.jpeg" alt="uma pessoa veterinária colocando um estetoscópio no coração de um cachorro paulistinha da cor branca e caramelo">
+                        <!--<figcaption>Imagem: Autor Desconhecido / Internet</figcaption>-->                                
+                    </figure>
+                    <p class="texto">Atendimento veterinário gratuito para cães resgatados e animais de famílias em situação de vulnerabilidade.</p>
+                </article>
+                  
+                <article>
+                    <h2 class="texto">Abrigo para Amicãos Abandonados</h2>
+                    <figure>
+                        <img src="img/cachorro2.jpg" alt="uma mulher voluntária segurando a pata esquerda de um cachorro caramelo e acariciando a barriga dele">
+                        <!--<figcaption>Imagem:<a href="https://www.freepik.com/free-photo/rescue-dog-enjoying-being-pet-by-woman-shelter_10295954.htm" target="_blank" rel="noopener noreferrer">Freepik</a></figcaption>-->
+                    </figure>
+                    <p class="texto">Carinho, proteção e cuidado.</p>
+                </article>
+            </section>
+            
+            <section id="ajudar">
+                <div class="grid-container">
+                    <div class="texto">
+                        <h2>Quero Ajudar</h2>
+                        <p>Você pode participar como voluntário ajudando nos resgates, cuidados e eventos.</p>
+                        <p><a href="cadastro.html" class="btn btn-cadastreaqui">Cadastre Aqui</a></p>
+                    </div>
+
+                    <figure class="imagem">
+                        <img src="img/cachorro12.jpg" alt="Menina segurando filhote de cachorro yorkshire terrier">
+                        <!--<figcaption><a href="https://pt.123rf.com/photo_121190323_ador%C3%A1vel-sorrindo-menina-crian%C3%A7a-segurando-e-brincando-com-filhote-de-cachorro-yorkshire-terrier.html" target="_blank" rel="noopener noreferrer">Imagem</a></figcaption>-->
+                    </figure>
+                </div>
+
+                <div class="grid-container">
+                    <figure class="imagem">
+                        <img src="img/cachorro11.jpg" alt="Filhote de husky siberiano preto e branco com olhos azuis">
+                        <!--<figcaption><a href="https://animais.umcomo.com.br/artigo/como-fazer-um-filhote-de-cachorro-parar-de-chorar-17966.html" target="_blank" rel="noopener noreferrer">Imagem</a></figcaption>-->
+                    </figure>
+
+                    <div class="texto">
+                        <h2>Como Doar</h2>
+                        <p>As doações podem ser feitas via Pix, depósito ou presencialmente.</p>
+                        <p><strong>Pix:</strong> doacoes@resgateamicao.org</p>
+                        <p><strong>Banco Singular:</strong> Ag: 1234 | C/C: 56789-0</p>
+                    </div>
+                </div>
+            </section>     
+        </main>
+        
+        <footer class="footer">
+            <div class="footer-content">
+                <nav class="social-icons">
+                    <a href="https://facebook.com" target="_blank" title="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" title="Twitter">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a href="https://youtube.com" target="_blank" title="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://tiktok.com" target="_blank" title="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://wa.me/5561912345678" target="_blank" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="mailto:contato@resgateamicao.org" aria-label="Enviar e-mail">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </nav>
+
+                <p class="footer-copy"><strong>&copy; 2025 ONG Resgate Amicão by Danyelle Brown</strong></p>
+            </div>
+            
+            <a href="#" class="footer-logo-link">
+                <img src="img/logo4.png" alt="Logo da ONG Resgate Amicão" class="footer-logo">
+            </a>
+        </footer>
+
+        <script defer src="js/script.js"></script>
+    </body>
+</html>

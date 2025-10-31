@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <title>Quero Adotar</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.8/inputmask.min.js"></script>
+    </head>
+
+    <body>
+        <header class="header">
+            <a href="index.html" class="logo" aria-label="Página inicial da Resgate Amicão">
+                <img src="img/logo4.png" alt="Logo da ONG Resgate Amicão, com a pata de de um cachorro, nas cores verde e branco, e o nome da organização abaixo, na cor verde">
+                <span class="nome-ong">Resgate Amicão</span>
+            </a>   
+            
+            <nav>
+                <ul class="navMenu">
+                    <li><a href="index.html">Página Inicial</a></li>
+                    <li class="has-submenu"><a href="index.html#nossaong">Nossa ONG</a>
+                        <ul class="submenu">
+                            <li><a href="index.html#nossaong">Quem Somos</a></li>
+                            <li><a href="index.html#missao">Missão</a></li>
+                            <li><a href="index.html#visao">Visão</a></li>
+                            <li><a href="index.html#valores">Valores</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu"><a href="projetos.html">Projetos Sociais</a>
+                        <ul class="submenu">
+                            <li><a href="projetos.html#ajudar">Quero Ajudar</a></li>
+                            <li><a href="projetos.html#ajudar">Como Doar</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="adocao.html">Quero Adotar</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>                  
+                </ul>
+            </nav>
+
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Alternar menu de navegação">
+                <i class="fas fa-bars"></i>
+            </button>
+        </header>
+
+        <main>
+            <h1>Quero Adotar!</h1>
+            <h2 class="subtitulo-adocao">Conheça nossos amigos que estão aguardando um lar</h2>
+            <section class="cards-container" aria-label="Animais disponíveis para adoção">
+                <!--Animal 1-->
+                <article class="card">
+                    <h3>Luna</h3>
+                    <figure>
+                        <img src="img/cachorro6.jpg" alt="Labrador marrom, chamada Luna">
+                        <figcaption><strong>Idade: </strong>3 anos<!--<br>Imagem: <a href="https://pt.m.wikipedia.org/wiki/Ficheiro:Labrador_Retriever_chocolate_Hershey_sit.jpg" target="_blank" rel="noopener noreferrer">Rob Hanson</a>--></figcaption>
+                    </figure>
+                    <p><strong>Raça: </strong>Labrador</p>
+                    <p><strong>Personalidade: </strong>Doce e Amigável</p>
+                </article>
+
+                <!--Animal 2-->
+                <article class="card">
+                    <h3>Max </h3>
+                    <figure>
+                        <img src="img/cachorro9.jpg" alt="Beagle, caramelo, preto e branco, chamado Max">
+                        <figcaption><strong>Idade: </strong>5 anos<!--<br>Imagem: <a href="https://www.istockphoto.com/br/foto/beagle-5-anos-de-idade-sentado-na-frente-do-branco-fundo-gm962855368-262985828?searchscope=image%2Cfilm" target="_blank" rel="noopener noreferrer">iStock</a>--></figcaption>
+                    </figure>
+                    <p><strong>Raça: </strong>Beagle</p>
+                    <p><strong>Personalidade: </strong>Inteligente e Amigável</p>
+                </article>
+
+                <!--Animal 3-->
+                <article class="card">
+                    <h3>Thor</h3>
+                    <figure>
+                        <img src="img/cachorro7.jpg" alt="Golden retriever, amarelo, chamado Thor">
+                        <figcaption><strong>Idade: </strong>4 anos<!--<br>Imagem: <a href="https://br.freepik.com/fotos-gratis/retrato-vertical-de-um-golden-retriever-olhando-para-longe-com-um-ceu-nublado_17242715.htm#fromView=search&page=2&position=5&uuid=59f60ea0-3606-40ea-a928-1b988058f37a&query=golden+retriever" target="_blank" rel="noopener noreferrer">Wirestock</a>--></figcaption>
+                    </figure>
+                    <p><strong>Raça: </strong>Golden Retriever</p>
+                    <p><strong>Personalidade: </strong>Calmo e Protetor</p>
+                </article>
+            </section>                       
+        </main>
+        
+        <footer class="footer">
+            <div class="footer-content">
+                <nav class="social-icons">
+                    <a href="https://facebook.com" target="_blank" title="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" title="Twitter">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a href="https://youtube.com" target="_blank" title="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://tiktok.com" target="_blank" title="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://wa.me/5561912345678" target="_blank" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="mailto:contato@resgateamicao.org" aria-label="Enviar e-mail">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </nav>
+
+                <p class="footer-copy"><strong>&copy; 2025 ONG Resgate Amicão by Danyelle Brown</strong></p>
+            </div>
+            
+            <a href="#" class="footer-logo-link">
+                <img src="img/logo4.png" alt="Logo da ONG Resgate Amicão" class="footer-logo">
+            </a>
+        </footer>
+
+        <script defer src="js/script.js"></script>
+    </body>
+</html>

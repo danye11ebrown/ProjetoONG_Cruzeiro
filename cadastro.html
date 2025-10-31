@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <title>Cadastro</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.8/inputmask.min.js"></script>
+    </head>
+
+    <body>
+         <header class="header">
+            <a href="index.html" class="logo" aria-label="Página inicial da Resgate Amicão">
+                <img src="img/logo4.png" alt="Logo da ONG Resgate Amicão, com a pata de de um cachorro, nas cores verde e branco, e o nome da organização abaixo, na cor verde">
+                <span class="nome-ong">Resgate Amicão</span>
+            </a> 
+            
+            <nav>
+                <ul class="navMenu">
+                    <li><a href="index.html">Página Inicial</a></li>
+                    <li class="has-submenu"><a href="index.html#nossaong">Nossa ONG</a>
+                        <ul class="submenu">
+                            <li><a href="index.html#nossaong">Quem Somos</a></li>
+                            <li><a href="index.html#missao">Missão</a></li>
+                            <li><a href="index.html#visao">Visão</a></li>
+                            <li><a href="index.html#valores">Valores</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu"><a href="projetos.html">Projetos Sociais</a>
+                        <ul class="submenu">
+                            <li><a href="projetos.html#ajudar">Quero Ajudar</a></li>
+                            <li><a href="projetos.html#ajudar">Como Doar</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="adocao.html">Quero Adotar</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>                  
+                </ul>
+            </nav>
+
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Alternar menu de navegação">
+                <i class="fas fa-bars"></i>
+            </button>
+        </header>
+
+        <main>
+            <h1>Cadastro de Voluntários</h1>
+
+            <div class="success-message" id="successMessage">Cadastro realizado com sucesso! Entraremos em contato em breve.</div>
+
+            <form id="cadastroForm" onsubmit="handleSubmit(event)">
+                <fieldset>
+                    <legend><strong>Dados Pessoais</strong></legend>
+                    <div class="form-group">
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome" required placeholder="Digite aqui seu nome completo"><br><br>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required placeholder="exemplo@email.com"><br><br>
+                        <label for="celular">Celular:</label>
+                        <input type="tel" id="celular" name="celular" required pattern="\(\d{2}\)\s\d{5}-\d{4}" placeholder="(61) 00000-0000"><br><br>
+                    </div>
+                </fieldset><br>
+
+                <fieldset>
+                    <legend><strong>Endereço</strong></legend>
+                    <div class="form-group">
+                        <label for="endereco">Endereço Completo:</label>
+                        <input type="text" id="endereco" name="endereco" required placeholder="Digite aqui seu endereço completo"><br><br>
+                    </div>
+                </fieldset><br>
+
+                <fieldset>
+                    <legend><strong>Informações Adicionais</strong></legend>
+                    <div class="form-group">
+                        <label for="experiencia">Você possui alguma experiência com voluntariado?</label>
+                        <textarea id="experiencia" name="experiencia" placeholder="Descreva sua experiência (se houver)" maxlength="500"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="motivacao">Por que você quer ser voluntário?</label>
+                        <textarea id="motivacao" name="motivacao" placeholder="Conte-nos um pouco sobre a sua motivação" maxlength="500"></textarea>
+                    </div>
+                </fieldset><br>
+
+                <button type="submit" class="btn btn-enviarcadastro">Enviar Cadastro</button>
+            </form>
+        </main>
+        
+        <footer class="footer">
+            <div class="footer-content">
+                <nav class="social-icons">
+                    <a href="https://facebook.com" target="_blank" title="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" title="Twitter">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a href="https://youtube.com" target="_blank" title="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://tiktok.com" target="_blank" title="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://wa.me/5561912345678" target="_blank" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="mailto:contato@resgateamicao.org" aria-label="Enviar e-mail">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </nav>
+
+                <p class="footer-copy"><strong>&copy; 2025 ONG Resgate Amicão by Danyelle Brown</strong></p>
+            </div>
+            
+            <a href="#" class="footer-logo-link">
+                <img src="img/logo4.png" alt="Logo da ONG Resgate Amicão" class="footer-logo">
+            </a>
+        </footer>
+
+        <script defer src="js/script.js"></script>
+    </body>
+</html>
